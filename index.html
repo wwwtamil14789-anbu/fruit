@@ -792,15 +792,51 @@
        color:orange;
     }
 
-    /* responsive media query */
+    /* responsive media query for all devices */
+    @media (max-width: 1200px)
+    {
+        body
+        {
+            overflow-x: hidden;
+        }
+        img
+        {
+            max-width: 100%;
+            height: auto;
+        }
+        .nav-table
+        {
+            width: 94%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .gallery .card
+        {
+            width: 30%;
+        }
+        .product
+        {
+            width: 31%;
+        }
+        .seller-1
+        {
+            width: auto;
+            margin-left: 30px;
+            margin-right: 30px;
+            gap: 20px;
+        }
+        .orange-1 img
+        {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
     @media (max-width: 992px)
     {
         .nav-table
         {
-            width: 94%;
             height: auto;
-            margin-left: auto;
-            margin-right: auto;
             padding: 12px 16px;
             flex-wrap: wrap;
             justify-content: center;
@@ -813,10 +849,11 @@
         }
         nav
         {
-            margin: 20px 20px 0;
+            margin: 20px;
             flex-wrap: wrap;
             justify-content: center;
             row-gap: 18px;
+            text-align: center;
         }
         .nav-links ul
         {
@@ -838,11 +875,6 @@
         {
             font-size: 42px;
         }
-        .main .img img,
-        .part-2 img
-        {
-            max-width: 100%;
-        }
         .icon
         {
             width: 45%;
@@ -853,6 +885,7 @@
         }
         .organic-food
         {
+            margin: 50px 30px;
             flex-direction: column;
             gap: 20px;
             text-align: center;
@@ -864,14 +897,23 @@
             justify-content: center;
             gap: 10px;
         }
+        .gallery
+        {
+            gap: 24px;
+        }
         .gallery .card
         {
             width: 45%;
+        }
+        .card .img
+        {
+            min-height: 230px;
         }
         .posi
         {
             flex-wrap: wrap;
             row-gap: 30px;
+            margin: 80px 30px;
         }
         .box
         {
@@ -889,8 +931,13 @@
         }
         .rup
         {
-            right: 35%;
+            right: 30%;
             top: 20px;
+        }
+        .seller
+        {
+            margin-left: 0;
+            gap: 25px;
         }
         .product
         {
@@ -898,20 +945,12 @@
         }
         .seller-1
         {
-            width: auto;
-            margin-left: 20px;
-            margin-right: 20px;
             flex-wrap: wrap;
-            gap: 20px;
+            justify-content: center;
         }
         .product-1
         {
             width: 45%;
-        }
-        .orange-1 img
-        {
-            width: 100%;
-            object-fit: cover;
         }
         .profile
         {
@@ -943,13 +982,43 @@
 
     @media (max-width: 768px)
     {
+        .nav-table
+        {
+            width: 95%;
+            border-radius: 10px;
+        }
+        .nav-table p
+        {
+            padding-top: 5px;
+            line-height: 1.6;
+        }
+        nav
+        {
+            flex-direction: column;
+        }
+        .nav-links ul
+        {
+            gap: 6px;
+        }
+        .nav-links ul a
+        {
+            font-size: 18px;
+        }
         .main
         {
             flex-direction: column;
+            padding: 45px 20px;
             text-align: center;
+            font-size: 24px;
+        }
+        .content h1
+        {
+            font-size: 38px;
         }
         .btn
         {
+            width: 100%;
+            max-width: 300px;
             margin: 0 auto;
         }
         .main-icon
@@ -959,27 +1028,23 @@
         .icon
         {
             width: 100%;
-            max-width: 360px;
+            max-width: 370px;
         }
         .gallery
         {
             margin: 40px 20px;
-            gap: 24px;
         }
         .gallery .card
         {
             width: 100%;
-            max-width: 380px;
+            max-width: 390px;
         }
-        .img .top
-        {
-            margin-left: 10px;
-            display: block;
-        }
+        .img .top,
         .img .top-left
         {
-            margin-right: 0;
             display: block;
+            margin-left: 10px;
+            margin-right: 0;
         }
         .posi
         {
@@ -988,7 +1053,7 @@
         .box
         {
             width: 100%;
-            max-width: 420px;
+            max-width: 430px;
         }
         .fresh-head,
         .arrow
@@ -1002,10 +1067,15 @@
             height: auto;
             margin-top: 15px;
         }
+        .arrow i
+        {
+            width: 70px;
+        }
         .back
         {
             flex-direction: column;
             text-align: center;
+            margin-top: 20px;
         }
         .back .part-1
         {
@@ -1032,6 +1102,12 @@
             align-items: center;
             text-align: center;
         }
+        .orange img
+        {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
         .doller
         {
             text-align: center;
@@ -1043,6 +1119,7 @@
         .product-1
         {
             width: 90%;
+            max-width: 360px;
         }
         .profile
         {
@@ -1073,10 +1150,101 @@
             margin-left: 0;
             text-align: center;
         }
+        .footer-main
+        {
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-icons
+        {
+            line-height: 1.8;
+        }
         .copy-rigt
         {
             flex-direction: column;
             padding: 30px 20px;
+        }
+    }
+
+    @media (max-width: 576px)
+    {
+        .nav-links ul
+        {
+            flex-direction: column;
+            align-items: center;
+        }
+        .content h1
+        {
+            font-size: 34px;
+        }
+        .main
+        {
+            padding: 35px 16px;
+        }
+        .main .img img
+        {
+            max-height: 260px;
+        }
+        .organic-food
+        {
+            margin: 35px 20px;
+        }
+        .our h1,
+        .fresh-head
+        {
+            font-size: 28px;
+        }
+        .button button
+        {
+            width: 135px;
+            font-size: 14px;
+        }
+        .gallery
+        {
+            margin: 30px 12px;
+        }
+        .cart
+        {
+            display: inline-block;
+            margin: 12px 0 0;
+        }
+        .posi
+        {
+            margin: 45px 12px;
+        }
+        .box
+        {
+            max-width: 360px;
+        }
+        .posi img
+        {
+            height: 230px;
+            object-fit: cover;
+        }
+        .off
+        {
+            width: 70%;
+            height: auto;
+            min-height: 90px;
+            padding: 10px;
+        }
+        .product,
+        .product-1,
+        .client
+        {
+            width: 96%;
+        }
+        .center-1
+        {
+            padding: 0 15px;
+        }
+        .profile
+        {
+            margin: 30px 12px;
+        }
+        .footer-main
+        {
+            padding: 35px 15px;
         }
     }
 
@@ -1085,7 +1253,6 @@
         .nav-table
         {
             font-size: 14px;
-            border-radius: 10px;
         }
         nav h1
         {
@@ -1095,38 +1262,17 @@
         {
             font-size: 16px;
         }
-        .content h1
-        {
-            font-size: 34px;
-        }
-        .main
+        .nav-icon
         {
             font-size: 22px;
-            padding: 35px 16px;
         }
-        .btn
+        .h
         {
-            width: 100%;
-            max-width: 300px;
+            font-size: 20px;
         }
-        .organic-food
+        .content h1
         {
-            margin: 35px 20px;
-        }
-        .button button
-        {
-            width: 135px;
-            font-size: 14px;
-        }
-        .cart
-        {
-            display: inline-block;
-            margin: 12px 0 0;
-        }
-        .off
-        {
-            width: 70%;
-            left: 50%;
+            font-size: 32px;
         }
         .orange img
         {
@@ -1149,6 +1295,36 @@
         .footer-main h2
         {
             font-size: 24px;
+        }
+    }
+
+    @media (max-width: 360px)
+    {
+        .content h1
+        {
+            font-size: 28px;
+        }
+        .btn
+        {
+            font-size: 15px;
+        }
+        .btn div
+        {
+            width: 88px;
+            font-size: 12px;
+        }
+        .button button
+        {
+            width: 120px;
+        }
+        .arrow i
+        {
+            width: 58px;
+            font-size: 24px;
+        }
+        .footer-head h1
+        {
+            font-size: 36px;
         }
     }
 
