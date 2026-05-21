@@ -792,153 +792,365 @@
        color:orange;
     }
 
-    @media (max-width: 992px) {
+    /* responsive media query */
+    @media (max-width: 992px)
+    {
+        .nav-table
+        {
+            width: 94%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 12px 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+        .nav-table .address,
+        .nav-table .policy
+        {
+            padding: 0;
+        }
+        nav
+        {
+            margin: 20px 20px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 18px;
+        }
+        .nav-links ul
+        {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .nav-icon
+        {
+            margin-right: 0;
+            padding-right: 0;
+        }
+        .main
+        {
+            padding: 50px 24px;
+            align-items: center;
+            gap: 30px;
+        }
+        .content h1
+        {
+            font-size: 42px;
+        }
+        .main .img img,
+        .part-2 img
+        {
+            max-width: 100%;
+        }
+        .icon
+        {
+            width: 45%;
+        }
+        .one
+        {
+            margin: 0 auto 15px;
+        }
+        .organic-food
+        {
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+        .button
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery .card
+        {
+            width: 45%;
+        }
+        .posi
+        {
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+        .box
+        {
+            width: 45%;
+        }
+        .off
+        {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .back
+        {
+            position: relative;
+            align-items: center;
+        }
+        .rup
+        {
+            right: 35%;
+            top: 20px;
+        }
+        .product
+        {
+            width: 45%;
+        }
+        .seller-1
+        {
+            width: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-1
+        {
+            width: 45%;
+        }
+        .orange-1 img
+        {
+            width: 100%;
+            object-fit: cover;
+        }
+        .profile
+        {
+            width: auto;
+            margin: 50px 30px;
+            flex-wrap: wrap;
+        }
+        .pro
+        {
+            width: 42%;
+        }
+        .footer-main
+        {
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px 25px;
+            text-align: center;
+        }
+        .footer-head
+        {
+            padding-right: 0;
+        }
+        .copy-rigt
+        {
+            gap: 20px;
+            text-align: center;
+        }
+    }
 
-  /* nav table */
-  .nav-table {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-    margin-left: 20px;
-  }
+    @media (max-width: 768px)
+    {
+        .main
+        {
+            flex-direction: column;
+            text-align: center;
+        }
+        .btn
+        {
+            margin: 0 auto;
+        }
+        .main-icon
+        {
+            padding: 45px 20px;
+        }
+        .icon
+        {
+            width: 100%;
+            max-width: 360px;
+        }
+        .gallery
+        {
+            margin: 40px 20px;
+            gap: 24px;
+        }
+        .gallery .card
+        {
+            width: 100%;
+            max-width: 380px;
+        }
+        .img .top
+        {
+            margin-left: 10px;
+            display: block;
+        }
+        .img .top-left
+        {
+            margin-right: 0;
+            display: block;
+        }
+        .posi
+        {
+            margin: 60px 20px;
+        }
+        .box
+        {
+            width: 100%;
+            max-width: 420px;
+        }
+        .fresh-head,
+        .arrow
+        {
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .arrow
+        {
+            height: auto;
+            margin-top: 15px;
+        }
+        .back
+        {
+            flex-direction: column;
+            text-align: center;
+        }
+        .back .part-1
+        {
+            padding: 30px 10px;
+            font-size: 22px;
+        }
+        .part-2
+        {
+            width: 100%;
+        }
+        .rup
+        {
+            position: static;
+            margin: 15px auto;
+        }
+        .center
+        {
+            font-size: 38px;
+        }
+        .product
+        {
+            width: 90%;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .doller
+        {
+            text-align: center;
+        }
+        .doller button
+        {
+            margin-left: 0;
+        }
+        .product-1
+        {
+            width: 90%;
+        }
+        .profile
+        {
+            margin: 40px 20px;
+        }
+        .pro
+        {
+            width: 90%;
+        }
+        .testimonial
+        {
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+        .client
+        {
+            width: 90%;
+        }
+        .client-img
+        {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .client-content
+        {
+            margin-left: 0;
+            text-align: center;
+        }
+        .copy-rigt
+        {
+            flex-direction: column;
+            padding: 30px 20px;
+        }
+    }
 
-  nav {
-    flex-direction: column;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .nav-links ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav-icon {
-    margin-right: 0;
-  }
-
-  /* main section */
-  .main {
-    flex-direction: column;
-    text-align: center;
-    padding: 30px;
-  }
-
-  .content h1 {
-    font-size: 40px;
-  }
-
-  /* icon section */
-  .icon {
-    width: 45%;
-  }
-
-  /* gallery */
-  .gallery .card {
-    width: 45%;
-  }
-
-  /* feature product */
-  .posi {
-    flex-direction: column;
-    row-gap: 20px;
-  }
-
-  /* bestseller */
-  .product,
-  .product-1 {
-    width: 45%;
-  }
-
-  /* profile */
-  .profile {
-    flex-wrap: wrap;
-    width: 95%;
-    margin-left: 20px;
-  }
-
-  .pro {
-    width: 45%;
-  }
-
-  /* testimonial */
-  .testimonial {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .client {
-    width: 90%;
-  }
-
-}
-
-@media (max-width: 576px) {
-
-  /* nav table */
-  .nav-table {
-    width: 95%;
-    margin-left: 10px;
-    text-align: center;
-  }
-
-  nav h1 {
-    font-size: 24px;
-  }
-
-  .nav-links ul {
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  /* main */
-  .content h1 {
-    font-size: 30px;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  /* icons */
-  .icon {
-    width: 90%;
-  }
-
-  /* gallery */
-  .gallery .card {
-    width: 90%;
-  }
-
-  /* bestseller */
-  .product,
-  .product-1 {
-    width: 90%;
-  }
-
-  .orange img,
-  .orange-1 img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* profile */
-  .pro {
-    width: 90%;
-  }
-
-  /* footer */
-  .footer-main,
-  .footer-main-1,
-  .copy-rigt {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-head {
-    padding-right: 0;
-  }
-}
+    @media (max-width: 480px)
+    {
+        .nav-table
+        {
+            font-size: 14px;
+            border-radius: 10px;
+        }
+        nav h1
+        {
+            font-size: 28px;
+        }
+        .nav-links ul a
+        {
+            font-size: 16px;
+        }
+        .content h1
+        {
+            font-size: 34px;
+        }
+        .main
+        {
+            font-size: 22px;
+            padding: 35px 16px;
+        }
+        .btn
+        {
+            width: 100%;
+            max-width: 300px;
+        }
+        .organic-food
+        {
+            margin: 35px 20px;
+        }
+        .button button
+        {
+            width: 135px;
+            font-size: 14px;
+        }
+        .cart
+        {
+            display: inline-block;
+            margin: 12px 0 0;
+        }
+        .off
+        {
+            width: 70%;
+            left: 50%;
+        }
+        .orange img
+        {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+        }
+        .center
+        {
+            font-size: 32px;
+        }
+        .our-2
+        {
+            font-size: 32px;
+        }
+        .footer-head h1
+        {
+            font-size: 42px;
+        }
+        .footer-main h2
+        {
+            font-size: 24px;
+        }
+    }
 
 
 
